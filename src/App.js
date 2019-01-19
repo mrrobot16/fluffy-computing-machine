@@ -22,13 +22,16 @@ class App extends Component {
                     <Link to="/non-profit">Non Profit</Link>
                   </li>
                   <li>
-                    <Link to="/supplier">Suppier</Link>
+                    <Link to="/supplier">Supplier</Link>
                   </li>
                   <li>
                     <Link to="/donate">Donate</Link>
                   </li>
                   <li>
                     <Link to="/purchase">Purchase</Link>
+                  </li>
+                  <li>
+                    <Link to="/activity">Donation Activity</Link>
                   </li>
                 </ul>
               </div>

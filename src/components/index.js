@@ -4,7 +4,8 @@ import { NonProfitDashboardComponent } from './non-profit-dashboard/non-profit-d
 import { SupplierComponent } from './supplier/supplier.component'
 import { DonateComponent } from './donate/donate.component'
 import { PurchaseComponent } from './purchase/purchase.component'
+import { DonationActivityComponent } from './donation-activity/donation-activity.component'
 export {
   HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
-  SupplierComponent, DonateComponent, PurchaseComponent
+  SupplierComponent, DonateComponent, PurchaseComponent, DonationActivityComponent
 }
