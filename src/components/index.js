@@ -1,2 +1,3 @@
 import { HomeComponent } from './home/home.component'
-export { HomeComponent }
+import { DonorDashboardComponent } from './donor-dashboard/donor-dashboard.component'
+export { HomeComponent, DonorDashboardComponent }
