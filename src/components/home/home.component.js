@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import logo from 'src/logo.svg'
-class HomeComponent extends Component {
+export class HomeComponent extends Component {
   render() {
+    // LANDING PAGE Component
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className="home-component">
+        <header className="home-header">
           <p>
             BRING IT HOME BABY MIAMI BITCOIN HACKATHON
           </p>
@@ -14,5 +13,3 @@ class HomeComponent extends Component {
     );
   }
 }
-
-export default App;

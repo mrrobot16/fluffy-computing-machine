@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRouter } from './routes/app.routes'
+import './App.css'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-          MIAMI BITCOIN HACKATHON
-          </p>
-        </header>
+        <BrowserRouter>
+          <div className="app-component">
+            <AppRouter/>
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
