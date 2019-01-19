@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
 import { AppRouter } from './routes/app.routes'
+import { HeaderComponent } from './components'
 import './App.css'
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <div className="app-component">
+            <HeaderComponent/>
             <AppRouter/>
               <div className="nav-links">
                 <ul>
