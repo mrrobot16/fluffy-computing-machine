@@ -11,7 +11,6 @@ class App extends Component {
           <p>
           MIAMI BITCOIN HACKATHON
           </p>
-
         </header>
       </div>
     );
