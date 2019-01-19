@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
-import { HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent, SupplierComponent } from '../components'
+import { HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent, SupplierComponent, DonateComponent } from '../components'
 export class AppRouter extends Component {
   render(){
     return(
@@ -8,7 +8,8 @@ export class AppRouter extends Component {
         <Route exact path="/" component={HomeComponent} />
         <Route path="/donor" component={DonorDashboardComponent} />
         <Route path="/non-profit" component={NonProfitDashboardComponent} />
-        <Route path="/supplier" component={SupplierComponent} />  
+        <Route path="/supplier" component={SupplierComponent} />
+        <Route path="/donate" component={DonateComponent} />
       </div>
     )
   }
