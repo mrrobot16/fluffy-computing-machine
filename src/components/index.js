@@ -3,4 +3,8 @@ import { DonorDashboardComponent } from './donor-dashboard/donor-dashboard.compo
 import { NonProfitDashboardComponent } from './non-profit-dashboard/non-profit-dashboard.component'
 import { SupplierComponent } from './supplier/supplier.component'
 import { DonateComponent } from './donate/donate.component'
-export { HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent, SupplierComponent, DonateComponent }
+import { PurchaseComponent } from './purchase/purchase.component'
+export {
+  HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
+  SupplierComponent, DonateComponent, PurchaseComponent
+}
