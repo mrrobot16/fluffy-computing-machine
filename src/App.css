@@ -31,6 +31,11 @@
   }
 }
 
-ul {
+.nav-links > ul {
   list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+.nav-links > ul li {
+  margin-right: 10px; 
 }
