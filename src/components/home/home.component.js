@@ -9,27 +9,22 @@ export class HomeComponent extends Component {
     return (
       <div className="home-component">
       <NavbarHomeComponent/>
-        <div className="container bg-primary text-white">
-          <div className="row justify-content-center align-items-center" style={{height: '50vh'}}>
-            <div className="col">
-              <AgoraIcon style={{width: '100%'}}></AgoraIcon>
+        <div className="container-full bg-primary text-white" style={{height: '100vh'}}>
+          <div className="col-12">
+            <div className="row justify-content-center align-items-center" style={{height: '50vh'}}>
+              <div className="col-10 mx-4">
+                <AgoraIcon style={{width: '100%'}}></AgoraIcon>
+              </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md my-2">
-              <button type="button" className="btn btn-light"><Link to="/donor">I'm a donor</Link></button>
-            </div>
-            <div className="col-md my-3">
-              <button type="button" className="btn btn-light"><Link to="/non-profit">I'm a non-profit</Link></button>
+          <div className="col-12">
+            <div className="row justify-content-center align-items-center">
+              <div className="col-10 my-2">
+                <Link to="/donor" className="btn btn-outline-light btn-lg btn-block">I'm a donor</Link>
+                <Link to="/non-profit" className="btn btn-outline-light btn-lg btn-block">I'm a non-profit</Link>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="container my-4 fixed-bottom">
-            <div className="row">
-              <div className="col">About</div>
-              <div className="col">Team</div>
-              <div className="col">Contact</div>
-            </div>
         </div>
       </div>
     );

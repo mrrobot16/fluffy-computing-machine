@@ -34,43 +34,43 @@ export class NonProfitView extends Component {
         <h5>Campaigns</h5>
         <div className="row mb-3">
           <div className="col">
-            <div className="card">
+            <div className="card text-white bg-primary">
               <div className="card-body">
                 <ul className="list-unstyled">
-                  <Link to="/fund" className="text-decoration-none text-dark">
-                    <li className="media border-bottom py-4">
-                      <div className="media-body">
+                <li className="media border-bottom py-4">
+                  <div className="media-body">
+                    <div className="row">
+                      <div className="col-9">
+                        <h5 className="mt-0 mb-1">General Fund</h5>
+                        Donate directly to the organisation.
+                      </div>
+                      <div className="col-3 d-flex align-items-center justify-content-center">
+                        <Link to='/donate' className="btn btn-large btn-success">
+                          Donate
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="media pt-4">
+                  <div className="media-body">
+                    <div className="row">
+                      <div className="col-9">
+                        <h5 className="mt-0 mb-1">Net Neutrality Impact Study</h5>
+                        An impact study on Net Neutrality.
+                      </div>
+                      <div className="col-3 d-flex align-items-center justify-content-center">
                         <div className="row">
-                          <div className="col-9">
-                            <h5 className="mt-0 mb-1">General Fund</h5>
-                            Donate directly to the organisation.
-                          </div>
-                          <div className="col-3 d-flex align-items-center justify-content-center">
-                            <button className="btn btn-large btn-primary">
+                          <div className="col-12">
+                            <button className="btn btn-success">
                               Donate
                             </button>
                           </div>
                         </div>
                       </div>
-                    </li>
-                  </Link>
-                  <Link to="/fund" className="text-decoration-none text-dark">
-                    <li className="media pt-4">
-                      <div className="media-body">
-                        <div className="row">
-                          <div className="col-9">
-                            <h5 className="mt-0 mb-1">Net Neutrality Impact Study</h5>
-                            Donate directly to the organisation.
-                          </div>
-                          <div className="col-3 d-flex align-items-center justify-content-center">
-                            <button className="btn btn-large btn-primary">
-                              Donate
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </Link>
+                    </div>
+                  </div>
+                </li>
                 </ul>
               </div>
               <div class="card-footer text-muted bg-white text-center">
@@ -95,7 +95,7 @@ export class NonProfitView extends Component {
                 </small>
               </li>
               <li className="list-group-item">
-                Completed VPN Research Campaign
+                Completed VPN Awareness Campaign
                 <small className="float-right">
                   2 Week Ago
                 </small>

@@ -11,7 +11,9 @@ export class DonorDashboardComponent extends Component {
   render(){
     return (
       <div className="donor-dashboard">
+
         <NavbarDashboardComponent/>
+
         <div className="container-full">
           <div className="col bg-primary" style={{height: '20vh', marginBottom: '-15vh'}} >
           </div>
@@ -100,16 +102,6 @@ export class DonorDashboardComponent extends Component {
               </li>
             </ul>
           </div>
-          <div className="charity-to-fund">
-            <img src={charityLogo} alt="charityLogo"/>
-            <p>you're currently donating to <span><strong>The Salvation Army</strong></span></p>
-          </div>
-          <div className="donate-form">
-            <DonateComponent/>
-          </div>
-        </div>
-        <div className="bottom-navbar">
-          <BottomNavBarComponent/>
         </div>
       </div>
     )
