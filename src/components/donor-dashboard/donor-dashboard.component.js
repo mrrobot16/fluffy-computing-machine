@@ -41,7 +41,6 @@ export class DonorDashboardComponent extends Component {
                 </div>
               </div>
             </div>
-
             {/* Charity Activity */}
             <div className="row mb-3">
               <div className="col">
