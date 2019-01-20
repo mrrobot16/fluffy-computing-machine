@@ -10,9 +10,10 @@ import { HeaderComponent } from './header/header.component'
 import { UserInfoComponent } from './user-info/user-info.component'
 import { BottomNavBarComponent } from './bottom-navbar/bottom-navbar.component'
 import { WalletComponent } from './wallet/wallet.component'
+import { NonProfitView } from './non-profit-view/non-profit-view.component'
 export {
   HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
   DonateComponent, DonateSuccessComponent, DonationActivityComponent,
   SupplierComponent, PurchaseComponent, UserInfoComponent,
-  HeaderComponent, BottomNavBarComponent, WalletComponent
+  HeaderComponent, BottomNavBarComponent, WalletComponent, NonProfitView
 }
