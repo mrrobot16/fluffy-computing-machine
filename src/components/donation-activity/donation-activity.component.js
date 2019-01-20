@@ -24,7 +24,7 @@ export class DonationActivityComponent extends Component {
             </div>
           </div>
         </div>
-        <div class="bottom-navbar">
+        <div className="bottom-navbar">
           <BottomNavBarComponent/>
         </div>
       </div>

@@ -28,7 +28,7 @@ export class DonorDashboardComponent extends Component {
         <div className="donate-form">
           <DonateComponent/>
         </div>
-        <div class="bottom-navbar">
+        <div className="bottom-navbar">
           <BottomNavBarComponent/>
         </div>
       </div>

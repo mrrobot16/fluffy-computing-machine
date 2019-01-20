@@ -20,7 +20,7 @@ export class DonateSuccessComponent extends Component {
              Nullam eros eros, dictum vel interdum ac, euismod id leo.
           </p>
         </div>
-        <div class="bottom-navbar">
+        <div className="bottom-navbar">
           <BottomNavBarComponent/>
         </div>
       </div>
