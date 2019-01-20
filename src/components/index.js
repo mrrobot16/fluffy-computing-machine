@@ -2,6 +2,7 @@ import { HomeComponent } from './home/home.component'
 import { DonorDashboardComponent } from './donor-dashboard/donor-dashboard.component'
 import { NonProfitDashboardComponent } from './non-profit-dashboard/non-profit-dashboard.component'
 import { SupplierComponent } from './supplier/supplier.component'
+import { SupplierSelectedComponent } from './supplier/supplier-selected.component'
 import { DonateComponent } from './donate/donate.component'
 import { DonateSuccessComponent } from './donate/donate-success.component'
 import { PurchaseComponent } from './purchase/purchase.component'
@@ -14,5 +15,6 @@ export {
   HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
   DonateComponent, DonateSuccessComponent, DonationActivityComponent,
   SupplierComponent, PurchaseComponent, UserInfoComponent,
-  HeaderComponent, BottomNavBarComponent, WalletComponent
+  HeaderComponent, BottomNavBarComponent, WalletComponent,
+  SupplierSelectedComponent
 }
