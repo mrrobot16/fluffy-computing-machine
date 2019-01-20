@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BottomNavBarComponent } from '../'
+import bitcoin from '../../assets/icons/bitcoin.png'
 import './wallet.component'
 export class WalletComponent extends Component {
   copyBTCAddress(){
@@ -11,7 +12,7 @@ export class WalletComponent extends Component {
         <div className="current-balance">
           <p>Your current balance</p>
           <div className="btc-amount">
-            <img src="https://i.imgur.com/a7rkEBx.png" alt="btc-logo"/>
+            <img src={bitcoin} alt="btc-logo"/>
             <p>1.32 <span>BTC</span></p>
           </div>
           <div className="usd-amount">
