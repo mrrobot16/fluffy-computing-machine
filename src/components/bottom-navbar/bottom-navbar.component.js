@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import './bottom-navbar.component.css'
 import charities from '../../assets/icons/charities.svg'
 import wallet from '../../assets/icons/wallet.svg'
 import activity from '../../assets/icons/activity.svg'
