@@ -11,7 +11,9 @@ export class DonorDashboardComponent extends Component {
   render(){
     return (
       <div className="donor-dashboard">
+
         <NavbarDashboardComponent/>
+
         <div className="container-full">
           <div className="col bg-primary" style={{height: '20vh', marginBottom: '-15vh'}} >
           </div>
@@ -27,7 +29,7 @@ export class DonorDashboardComponent extends Component {
                 <div className="card w-100">
                   <div className="card-body">
                     <div className="card-text wallet-card-text">
-                      <img className="float-left" src={wallet} style={{height: '1.5em'}}/>
+                      <img className="float-left" src={wallet} style={{height: '1.5em'}} alt=""/>
                       <h3 className="d-flex align-items-center justify-content-center m-0">
                         <img className="pr-1" height="25" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt=""/>
                         <strong className="d-inline btc-amount">2.32</strong>
@@ -59,7 +61,7 @@ export class DonorDashboardComponent extends Component {
                 <div className="card">
                   <div className="card-body">
                     <ul className="list-unstyled">
-                      <Link to="/" className="text-decoration-none text-dark">
+                      <Link to="/fund" className="text-decoration-none text-dark">
                         <li className="media border-bottom py-4">
                           <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/EFF_Logo.svg" className="mr-3" alt="..."/>
                           <div className="media-body">
@@ -68,7 +70,7 @@ export class DonorDashboardComponent extends Component {
                           </div>
                         </li>
                       </Link>
-                      <Link to="/" className="text-decoration-none text-dark">
+                      <Link to="/fund" className="text-decoration-none text-dark">
                         <li className="media pt-4">
                           <img src="https://avatars3.githubusercontent.com/u/4633127?s=200&v=4" className="mr-3" alt="..."/>
                           <div className="media-body">
@@ -100,16 +102,6 @@ export class DonorDashboardComponent extends Component {
               </li>
             </ul>
           </div>
-          <div className="charity-to-fund">
-            <img src={charityLogo} alt="charityLogo"/>
-            <p>you're currently donating to <span><strong>The Salvation Army</strong></span></p>
-          </div>
-          <div className="donate-form">
-            <DonateComponent/>
-          </div>
-        </div>
-        <div className="bottom-navbar">
-          <BottomNavBarComponent/>
         </div>
       </div>
     )

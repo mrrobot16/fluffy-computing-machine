@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom'
 import {
   HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
   SupplierComponent, DonateComponent, PurchaseComponent,
-  DonationActivityComponent, DonateSuccessComponent, WalletComponent
+  DonationActivityComponent, DonateSuccessComponent, WalletComponent, NonProfitView
 } from '../components'
 export class AppRouter extends Component {
   render(){
@@ -11,7 +11,8 @@ export class AppRouter extends Component {
       <div>
         <Route exact path="/" component={HomeComponent} />
         <Route path="/donor" component={DonorDashboardComponent} />
-        <Route path="/non-profit" component={NonProfitDashboardComponent} />
+        <Route path="/non-profit" component={NonProfitDashboardComponent}/>
+        <Route path="/fund" component={NonProfitView} />
         <Route path="/supplier" component={SupplierComponent} />
         <Route path="/donate" component={DonateComponent} />
         <Route path="/success" component={DonateSuccessComponent} />
