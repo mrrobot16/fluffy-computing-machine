@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import {
   HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
-  SupplierComponent, DonateComponent, PurchaseComponent, DonationActivityComponent, DonateSuccessComponent
+  SupplierComponent, DonateComponent, PurchaseComponent,
+  DonationActivityComponent, DonateSuccessComponent, WalletComponent
 } from '../components'
 export class AppRouter extends Component {
   render(){
@@ -16,6 +17,7 @@ export class AppRouter extends Component {
         <Route path="/success" component={DonateSuccessComponent} />
         <Route path="/purchase" component={PurchaseComponent} />
         <Route path="/activity" component={DonationActivityComponent} />
+        <Route path="/wallet" component={WalletComponent} />
       </div>
     )
   }
