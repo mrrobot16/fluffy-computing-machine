@@ -8,9 +8,10 @@ import { PurchaseComponent } from './purchase/purchase.component'
 import { DonationActivityComponent } from './donation-activity/donation-activity.component'
 import { HeaderComponent } from './header/header.component'
 import { UserInfoComponent } from './user-info/user-info.component'
+import { BottomNavBarComponent } from './bottom-navbar/bottom-navbar.component'
 export {
   HomeComponent, DonorDashboardComponent, NonProfitDashboardComponent,
   DonateComponent, DonateSuccessComponent, DonationActivityComponent,
-  SupplierComponent, PurchaseComponent, 
-  HeaderComponent, UserInfoComponent
+  SupplierComponent, PurchaseComponent, UserInfoComponent,
+  HeaderComponent, BottomNavBarComponent
 }
