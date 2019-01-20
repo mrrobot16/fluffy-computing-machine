@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { BottomNavBarComponent } from '../'
 const charityLogo = 'https://i.imgur.com/liZ55ZP.png'
 export class DonateSuccessComponent extends Component {
   render(){
@@ -20,7 +20,9 @@ export class DonateSuccessComponent extends Component {
              Nullam eros eros, dictum vel interdum ac, euismod id leo.
           </p>
         </div>
-        <Link to="/donor">Go to Dashboard</Link>
+        <div class="bottom-navbar">
+          <BottomNavBarComponent/>
+        </div>
       </div>
     )
   }

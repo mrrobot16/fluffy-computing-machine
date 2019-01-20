@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { DonateComponent } from '../'
+import { DonateComponent, BottomNavBarComponent } from '../'
 import './donor-dashboard.component.css'
 const charityLogo = 'https://i.imgur.com/liZ55ZP.png'
 export class DonorDashboardComponent extends Component {
@@ -27,6 +27,9 @@ export class DonorDashboardComponent extends Component {
         </div>
         <div className="donate-form">
           <DonateComponent/>
+        </div>
+        <div class="bottom-navbar">
+          <BottomNavBarComponent/>
         </div>
       </div>
     )
