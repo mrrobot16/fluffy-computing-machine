@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { DonateComponent, BottomNavBarComponent } from '../'
+import { NavbarDashboardComponent } from '../header/navbar-dashboard.component'
+
 import './donor-dashboard.component.css'
 const charityLogo = 'https://i.imgur.com/liZ55ZP.png'
 export class DonorDashboardComponent extends Component {
   render(){
     return (
       <div className="donor-dashboard">
+        <NavbarDashboardComponent/>
         <div className="donor-dashboard-links">
           <ul>
             {/* <li>
