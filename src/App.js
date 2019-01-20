@@ -2,14 +2,19 @@ import React, { Component } from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
 import { AppRouter } from './routes/app.routes'
 import { HeaderComponent } from './components'
-import './App.css'
+
+// Styles
+import './styles/App.scss'
+
+// JS
+import 'bootstrap';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <BrowserRouter>
-          <div className="app-component">
+          <div className="app-component container">
             <HeaderComponent/>
             <AppRouter/>
               <div className="nav-links">
