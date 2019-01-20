@@ -1,0 +1,12 @@
+
+#GearIcon {
+  height: 100%;
+  .color {
+    fill: #333;
+  }
+  &:hover, &:active {
+    .color {
+      fill: var(--primary);
+    }
+  }
+}
