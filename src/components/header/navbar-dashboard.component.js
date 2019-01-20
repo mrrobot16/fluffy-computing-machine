@@ -7,9 +7,10 @@ export class NavbarDashboardComponent extends Component {
     return(
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+
           <a className="navbar-brand" href="/">
             <picture className="d-block" style={{width: '90px', height: '100%'}}>
-              <AgoraIcon />
+              <AgoraIcon/>
             </picture>
           </a>
 
