@@ -1,8 +1,12 @@
+
+import $ from 'jquery';
+
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
 import { NavbarDashboardComponent } from '../header/navbar-dashboard.component'
 
+window.jQuery = window.$ = $;
 
 export class DonateComponent extends Component {
   constructor (props) {
@@ -12,7 +16,17 @@ export class DonateComponent extends Component {
 
   sendDonation () {
     console.log('Sending Donation...');
-    this.props.history.push('/success')
+
+    let $el = $('#successModal')
+
+    $el.modal('show')
+    setTimeout(() => {
+      $el.on('hidden.bs.modal', (e) => {
+        this.props.history.push('/donor')
+      })
+      $el.modal('hide')
+    }, 1500)
+
   }
 
   render () {
@@ -106,6 +120,15 @@ export class DonateComponent extends Component {
               </div>
             </div>
           </div>
+            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img width="100%" src="https://thumbs.gfycat.com/QuaintLikelyFlyingfish-size_restricted.gif" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     )
