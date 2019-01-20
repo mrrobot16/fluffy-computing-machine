@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import salvationArmyImg from '../../assets/images/the_salvation_army.png'
 import firstAidImage from '../../assets/images/first_aid.jpeg'
-
+import { BottomNavBarComponent } from '../'
 export class DonationActivityComponent extends Component {
   render() {
     return(
@@ -23,6 +23,9 @@ export class DonationActivityComponent extends Component {
                 Ut enim ad minim veniam.</p>
             </div>
           </div>
+        </div>
+        <div class="bottom-navbar">
+          <BottomNavBarComponent/>
         </div>
       </div>
     )

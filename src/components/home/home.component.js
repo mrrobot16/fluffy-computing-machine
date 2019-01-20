@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 export class HomeComponent extends Component {
   render() {
     // LANDING PAGE Component
@@ -11,7 +12,7 @@ export class HomeComponent extends Component {
             <div className="row">
 
               <div className="col-md my-3">
-                <img src="https://picsum.photos/375/227" width="375" height="227"></img>
+                <img src="https://picsum.photos/375/227" width="375" height="227" alt="landing-pic"></img>
               </div>
 
               <div className="col-md my-3">
@@ -25,11 +26,11 @@ export class HomeComponent extends Component {
               </div>
 
               <div className="col-md my-2">
-                <button type="button" className="btn btn-light">I'm a donar</button>
+                <button type="button" className="btn btn-light"><Link to="/donor">I'm a donor</Link></button>
               </div>
 
               <div className="col-md my-3">
-                <button type="button" className="btn btn-light">I'm a non-profit</button>
+                <button type="button" className="btn btn-light"><Link to="/non-profit">I'm a non-profit</Link></button>
               </div>
             </div>
           </div>
